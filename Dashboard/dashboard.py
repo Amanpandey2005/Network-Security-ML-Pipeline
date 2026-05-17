@@ -375,26 +375,26 @@ elif mode == "Real-Time Monitoring":
     # LIVE LOOP
     # ==============================
 
-status_placeholder = st.empty()
+    status_placeholder = st.empty()
 
-while True:
+    while True:
 
-    try:
+        try:
 
-        live_df = get_live_data()
+            live_df = get_live_data()
 
-        if live_df.empty:
+            if live_df.empty:
 
-            status_placeholder.info(
-                "Waiting for packets..."
-            )
+                status_placeholder.info(
+                    "Waiting for packets..."
+                )
 
-            time.sleep(2)
+                time.sleep(2)
 
-            continue
+                continue
 
-        else:
-            status_placeholder.empty()
+            else:
+                status_placeholder.empty()
 
             # ==============================
             # PREDICTIONS
