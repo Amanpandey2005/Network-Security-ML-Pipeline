@@ -375,7 +375,7 @@ elif mode == "Real-Time Monitoring":
     # LIVE LOOP
     # ==============================
 
-   status_placeholder = st.empty()
+status_placeholder = st.empty()
 
 while True:
 
